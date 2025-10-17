@@ -352,7 +352,9 @@ func goTestCmdArgs(opts *options, rerunOpts rerunOpts) []string {
 		var result []string
 		result = append(result, opts.args...)
 		result = append(result, rerunOpts.Args()...)
-		result = append(result, cmdArgPackageList(opts, rerunOpts)...)
+		if rerunOpts.pkg == "" {
+			result = append(result, cmdArgPackageList(opts, rerunOpts)...)
+		}
 		return result
 	}
 

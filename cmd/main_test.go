@@ -159,6 +159,14 @@ func TestGoTestCmdArgs(t *testing.T) {
 		},
 		expected: []string{"go", "test", "-json", "-timeout=2m", "./pkg"},
 	})
+	run(t, "raw command, without rerunOpts", testCase{
+		opts: &options{
+			rawCommand: true,
+			args:       []string{"./script", "-test.timeout=20m"},
+			packages:   []string{"./pkg"},
+		},
+		expected: []string{"./script", "-test.timeout=20m", "./pkg"},
+	})
 	run(t, "raw command, with rerunOpts", testCase{
 		opts: &options{
 			rawCommand: true,
