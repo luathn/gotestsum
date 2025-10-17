@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"gotest.tools/gotestsum/testjson"
+	"github.com/luathn/gotestsum/testjson"
 	"gotest.tools/v3/assert"
 	"gotest.tools/v3/golden"
 )

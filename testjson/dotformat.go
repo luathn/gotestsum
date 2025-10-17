@@ -10,8 +10,8 @@ import (
 	"time"
 
 	"golang.org/x/term"
-	"gotest.tools/gotestsum/internal/dotwriter"
-	"gotest.tools/gotestsum/internal/log"
+	"github.com/luathn/gotestsum/internal/dotwriter"
+	"github.com/luathn/gotestsum/internal/log"
 )
 
 func dotsFormatV1(out io.Writer) EventFormatter {

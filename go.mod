@@ -1,4 +1,4 @@
-module gotest.tools/gotestsum
+module github.com/luathn/gotestsum
 
 go 1.24.0
 

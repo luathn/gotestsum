@@ -13,8 +13,8 @@ import (
 	"time"
 
 	"github.com/dnephin/pflag"
-	"gotest.tools/gotestsum/internal/log"
-	"gotest.tools/gotestsum/testjson"
+	"github.com/luathn/gotestsum/internal/log"
+	"github.com/luathn/gotestsum/testjson"
 )
 
 func Run(name string, args []string) error {
